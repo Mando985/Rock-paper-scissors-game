@@ -13,39 +13,31 @@ def game():
             game()
          elif y == b:
             print("you lose, the computer chose paper")
-            
          elif y == c:
             print("you win! the computer unfortunately chose scissors")
-            
         elif x == "b":
            if y == a:
             print("you win! the computer unfortunately chose rock")
-            
            elif y == b:
             print("you both chose paper, try again")
             game()
            elif y == c:
             print("you lose, the computer chose scissors")
-            
         elif x == "c":
            if y == a:
             print("you lose, the computer chose rock")
-            
            elif y == b:
             print("you win! the computer unfortunately chose paper")
-            
            elif y == c:
             print("you both chose scissors, try again")
             game()
-
         h = input("Do you want to play again? (Y/N)\n==>")
         j = h.lower()
         if j == "y":
            game()    
-
     else:
         print("Invalid input, try again")
         game()       
 
-        
-game()
+
+game()     
